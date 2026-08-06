@@ -2,10 +2,10 @@
 
 ```bash
 # 日常提交 + 推送
-git add -A && git commit -m "更新笔记" && git push
+git add -A; git commit -m "更新常用git方法.md"; git push
 
 # 提交全部已跟踪文件（跳过 add）
-git commit -am "更新算法笔记" && git push
+git commit -am "更新算法笔记"; git push
 
 # 首次推送到 GitHub
 git remote add origin https://github.com/用户名/仓库.git
