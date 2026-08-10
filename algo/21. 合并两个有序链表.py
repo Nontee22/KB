@@ -10,7 +10,6 @@ class LinkedNode:
         self.val = val
         self.next = next
 
-
 def fun(head1, head2):
     d = cur = LinkedNode()
 
