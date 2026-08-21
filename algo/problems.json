@@ -1,15 +1,4 @@
 [
-  {"id": 30, "name": "最长有效括号", "url": "https://leetcode.cn/problems/longest-valid-parentheses/"},
-  {"id": 31, "name": "二叉树的锯齿形层次遍历", "url": "https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/"},
-  {"id": 32, "name": "二叉树的最近公共祖先", "url": "https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/"},
-  {"id": 33, "name": "寻找两个正序数组的中位数", "url": "https://leetcode.cn/problems/median-of-two-sorted-arrays/"},
-  {"id": 34, "name": "最小覆盖子串", "url": "https://leetcode.cn/problems/minimum-window-substring/"},
-  {"id": 35, "name": "两数之和", "url": "https://leetcode.cn/problems/two-sum/"},
-  {"id": 36, "name": "删除链表的倒数第N个节点", "url": "https://leetcode.cn/problems/remove-nth-node-from-end-of-list/"},
-  {"id": 37, "name": "括号生成", "url": "https://leetcode.cn/problems/generate-parentheses/"},
-  {"id": 38, "name": "x 的平方根", "url": "https://leetcode.cn/problems/sqrtx/"},
-  {"id": 39, "name": "接雨水", "url": "https://leetcode.cn/problems/trapping-rain-water/"},
-
   {"id": 40, "name": "字符串相乘", "url": "https://leetcode.cn/problems/multiply-strings/"},
   {"id": 41, "name": "复原IP地址", "url": "https://leetcode.cn/problems/restore-ip-addresses/"},
   {"id": 42, "name": "岛屿的最大面积", "url": "https://leetcode.cn/problems/max-area-of-island/"},
@@ -21,12 +10,6 @@
   {"id": 48, "name": "二分查找", "url": "https://leetcode.cn/problems/binary-search/"},
   {"id": 49, "name": "最大数", "url": "https://leetcode.cn/problems/largest-number/"},
 
-  {"id": 51, "name": "在排序数组中查找元素的第一个和最后一个位置", "url": "https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/"},
-  {"id": 52, "name": "环形链表", "url": "https://leetcode.cn/problems/linked-list-cycle/"},
-  {"id": 53, "name": "最长连续序列", "url": "https://leetcode.cn/problems/longest-consecutive-sequence/"},
-  {"id": 54, "name": "最小路径和", "url": "https://leetcode.cn/problems/minimum-path-sum/"},
-  {"id": 55, "name": "买卖股票的最佳时机 II", "url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/"},
-  {"id": 56, "name": "用 Rand7() 实现 Rand10()", "url": "https://leetcode.cn/problems/implement-rand10-using-rand7/"},
   {"id": 57, "name": "课程表", "url": "https://leetcode.cn/problems/course-schedule/"},
   {"id": 58, "name": "两两交换链表中的节点", "url": "https://leetcode.cn/problems/swap-nodes-in-pairs/"},
   {"id": 59, "name": "二叉树最大宽度", "url": "https://leetcode.cn/problems/maximum-width-of-binary-tree/"},
