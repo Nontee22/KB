@@ -5,10 +5,6 @@
   {"id": 43, "name": "二叉树中的最大路径和", "url": "https://leetcode.cn/problems/binary-tree-maximum-path-sum/"},
   {"id": 44, "name": "零钱兑换", "url": "https://leetcode.cn/problems/coin-change/"},
   {"id": 45, "name": "排序链表", "url": "https://leetcode.cn/problems/sort-list/"},
-  {"id": 46, "name": "二叉树的右视图", "url": "https://leetcode.cn/problems/binary-tree-right-side-view/"},
-  {"id": 47, "name": "字符串解码", "url": "https://leetcode.cn/problems/decode-string/"},
-  {"id": 48, "name": "二分查找", "url": "https://leetcode.cn/problems/binary-search/"},
-  {"id": 49, "name": "最大数", "url": "https://leetcode.cn/problems/largest-number/"},
 
   {"id": 57, "name": "课程表", "url": "https://leetcode.cn/problems/course-schedule/"},
   {"id": 58, "name": "两两交换链表中的节点", "url": "https://leetcode.cn/problems/swap-nodes-in-pairs/"},
