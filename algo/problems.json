@@ -1,11 +1,4 @@
 [
-  {"id": 40, "name": "字符串相乘", "url": "https://leetcode.cn/problems/multiply-strings/"},
-  {"id": 41, "name": "复原IP地址", "url": "https://leetcode.cn/problems/restore-ip-addresses/"},
-  {"id": 42, "name": "岛屿的最大面积", "url": "https://leetcode.cn/problems/max-area-of-island/"},
-  {"id": 43, "name": "二叉树中的最大路径和", "url": "https://leetcode.cn/problems/binary-tree-maximum-path-sum/"},
-  {"id": 44, "name": "零钱兑换", "url": "https://leetcode.cn/problems/coin-change/"},
-  {"id": 45, "name": "排序链表", "url": "https://leetcode.cn/problems/sort-list/"},
-
   {"id": 57, "name": "课程表", "url": "https://leetcode.cn/problems/course-schedule/"},
   {"id": 58, "name": "两两交换链表中的节点", "url": "https://leetcode.cn/problems/swap-nodes-in-pairs/"},
   {"id": 59, "name": "二叉树最大宽度", "url": "https://leetcode.cn/problems/maximum-width-of-binary-tree/"},
