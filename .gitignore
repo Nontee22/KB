@@ -80,3 +80,5 @@ coverage.html
 .env.*
 *.key
 *.pem
+venv/
+__pycache__/
