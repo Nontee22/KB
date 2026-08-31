@@ -3,11 +3,11 @@ import json
 from datetime import datetime
 from typing import Dict, Any
 
-from dotenv import load_dotenv
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 from langchain_openai import ChatOpenAI
+from dotenv import load_dotenv
 
 
 def analyze_response(data: Dict[str, Any]) -> Dict[str, Any]:
