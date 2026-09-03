@@ -29,7 +29,7 @@ def main():
 
     chain = prompt | llm | StrOutputParser()
 
-    for chunk in chain.stream({"name" : "小N", "question" : "你是谁"}):
+    for chunk in chain.stream({"name": "小N", "question": "你是谁"}):
         print(chunk, end="", flush=True)
 
 if __name__ == "__main__":

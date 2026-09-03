@@ -13,7 +13,7 @@ def main():
         api_key=os.getenv("API_KEY"),
         base_url="https://api.siliconflow.cn/v1",
         temperature=1,
-        streaming = True
+        streaming=True
     )
 
     messages = [

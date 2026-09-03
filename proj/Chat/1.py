@@ -1,9 +1,30 @@
+import os
+
+from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough, RunnableLambda
-from embedding_helper import get_embeddings
-from llm_helper import get_llm
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+
+
+def get_llm(temperature=0):
+    """构造 ChatOpenAI（SiliconFlow）"""
+    return ChatOpenAI(
+        model="Qwen/Qwen3-8B",
+        api_key=os.getenv("API_KEY"),
+        base_url="https://api.siliconflow.cn/v1",
+        temperature=temperature,
+    )
+
+
+def get_embeddings():
+    """构造 OpenAIEmbeddings（SiliconFlow 向量接口）"""
+    return OpenAIEmbeddings(
+        model="BAAI/bge-m3",
+        api_key=os.getenv("API_KEY"),
+        base_url="https://api.siliconflow.cn/v1",
+    )
 
 
 def format_docs(docs):
@@ -16,6 +37,8 @@ def format_docs(docs):
 
 
 def main():
+    load_dotenv()  # 读取 .env 中的 API_KEY
+
     # 1. 加载已存在的向量数据库
     print("正在加载知识库...")
     embeddings = get_embeddings()

@@ -6,11 +6,13 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.graph.message import add_messages
 from langgraph.checkpoint.memory import MemorySaver
 from langchain_openai import ChatOpenAI
+from dotenv import load_dotenv
 
 # ---------- 1. State：公共大字典 ----------
 class AgentState(TypedDict):
     messages: Annotated[list, add_messages]   # 聊天记录，自动追加
 
+load_dotenv()
 # ---------- 2. 节点：普通函数 ----------
 llm = ChatOpenAI(
         model="Qwen/Qwen3-8B",
@@ -22,7 +24,7 @@ llm = ChatOpenAI(
 
 def 聊天(state):
     result = llm.invoke(state["messages"])    # 读：历史自动在messages里
-    return {"messages": [result.content]}     # 写：自动追加进历史
+    return {"messages": [result]}             # 写：返回 AIMessage 对象，add_messages 才能正确追加
 
 # ---------- 3. 建图 ----------
 graph = StateGraph(AgentState)
@@ -38,9 +40,9 @@ app = graph.compile(checkpointer=memory)
 config = {"configurable": {"thread_id": "会话1"}}   # 同一个ID = 同一段记忆
 
 # 第1轮
-result = app.invoke({"messages": ["我叫小明"]}, config)
+result = app.invoke({"messages": [("user", "我叫小明")]}, config)
 print(result["messages"][-1].content)
 
 # 第2轮：不传历史，看它记不记得！
-result = app.invoke({"messages": ["我叫什么？"]}, config)
+result = app.invoke({"messages": [("user", "我叫什么？")]}, config)
 print(result["messages"][-1].content)   # ← 会答出"小明"，说明State记住了
