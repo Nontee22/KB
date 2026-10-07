@@ -1,9 +1,3 @@
-# LangChain LCEL 数据流与 Runnable 包装器使用指南
-
-本文档系统性地总结了在 LangChain 表达式语言（LCEL）中，关于数据流传递机制、`RunnableLambda` 与 `RunnablePassthrough.assign` 的核心区别、数据丢失原因及最佳实践。
-
----
-
 ## 一、核心机制：LCEL 的单向数据流
 
 在 LangChain 表达式语言（LCEL）中，链路（Chain）的构建依赖于严格的**单向数据流**和**管道模式（Pipeline Pattern）**。
